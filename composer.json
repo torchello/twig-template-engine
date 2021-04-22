@@ -17,15 +17,25 @@
         "Memio\\TwigTemplateEngine\\": "src/Memio/TwigTemplateEngine",
         "Memio\\TwigTemplateEngine\\Config\\": "config"
     }},
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:torchello/model.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:torchello/pretty-printer.git"
+        }
+    ],
     "require": {
-        "memio/model": "^2.0",
-        "memio/pretty-printer": "^2.0",
+        "memio/model": "dev-master",
+        "memio/pretty-printer": "dev-master",
         "php": "^7.0|^8.0",
         "twig/twig": "^1.18 || ^2.0 || ^3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.10",
-        "phpspec/phpspec": "^4.3"
+        "phpspec/phpspec": "7.0"
     },
     "extra": {
         "branch-alias": {
